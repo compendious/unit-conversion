@@ -29,7 +29,6 @@ const gallons = 3.785
 const kilos = 2.204
 const pounds = 0.453
 
-
 function iterations(){
     for(let i = 0; i < value.length; i++){
     resultValueFeet.textContent = parseFloat(value[i] * meter).toFixed(2)
@@ -43,7 +42,8 @@ function iterations(){
 
 inputBtn.addEventListener("click", function(){
     if(inputField.value === '' || isNaN(inputField.value)){
-        alert("Please fill the input field with numbers!");
+        swal ( "Oops" ,  "Please input a valid number!" ,  "error" )
+
     } else {
         value.push(inputField.value)
         for(let i = 0; i < value.length; i++){
