@@ -31,12 +31,12 @@ const pounds = 0.453
 
 function iterations(){
     for(let i = 0; i < value.length; i++){
-    resultValueFeet.textContent = parseFloat(value[i] * meter).toFixed(2)
-    resultValueMeter.textContent = parseFloat(value[i] * feet).toFixed(2)
-    resultValueGallons.textContent = parseFloat(value[i] * liters).toFixed(2)
-    resultValueLiters.textContent = parseFloat(value[i] * gallons).toFixed(2)
-    resultValuePounds.textContent = parseFloat(value[i] * kilos).toFixed(2)
-    resultValueKilos.textContent = parseFloat(value[i] * pounds).toFixed(2)
+    resultValueFeet.textContent = parseFloat(value[i] * meter).toFixed(3)
+    resultValueMeter.textContent = parseFloat(value[i] * feet).toFixed(3)
+    resultValueGallons.textContent = parseFloat(value[i] * liters).toFixed(3)
+    resultValueLiters.textContent = parseFloat(value[i] * gallons).toFixed(3)
+    resultValuePounds.textContent = parseFloat(value[i] * kilos).toFixed(3)
+    resultValueKilos.textContent = parseFloat(value[i] * pounds).toFixed(3)
     }
 }
 
