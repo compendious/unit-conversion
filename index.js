@@ -42,8 +42,8 @@ function iterations(){
 }
 
 inputBtn.addEventListener("click", function(){
-    if(inputField.value === ''){
-        alert("Please fill the input field!");
+    if(inputField.value === '' || isNaN(inputField.value)){
+        alert("Please fill the input field with numbers!");
     } else {
         value.push(inputField.value)
         for(let i = 0; i < value.length; i++){
