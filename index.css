@@ -32,7 +32,15 @@ div.result {
 }
 
 div.result h3 {
+    padding-top: 31px;
     color: #5A537B;
+}
+
+div.result p {
+    padding-bottom: 19px;
+    font-size: small;
+    font-weight: 400;
+
 }
 
 input {
